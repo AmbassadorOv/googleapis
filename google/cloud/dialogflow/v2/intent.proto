@@ -982,6 +982,7 @@ message BatchUpdateIntentsRequest {
   // Format: `projects/<Project ID>/agent`.
   string parent = 1 [
     (google.api.field_behavior) = REQUIRED,
+    (google.api.field_behavior) = REQUIRED,
     (google.api.resource_reference) = {
       child_type: "dialogflow.googleapis.com/Intent"
     }
@@ -1023,6 +1024,7 @@ message BatchDeleteIntentsRequest {
   // Required. The name of the agent to delete all entities types for. Format:
   // `projects/<Project ID>/agent`.
   string parent = 1 [
+    (google.api.field_behavior) = REQUIRED,
     (google.api.field_behavior) = REQUIRED,
     (google.api.resource_reference) = {
       child_type: "dialogflow.googleapis.com/Intent"
